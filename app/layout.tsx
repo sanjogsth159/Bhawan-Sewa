@@ -1,0 +1,31 @@
+import type { Metadata } from "next";
+import { DM_Sans, Fraunces } from "next/font/google";
+import "./globals.css";
+
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
+  subsets: ["latin"],
+});
+
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://bhawansewa.com"),
+  title: { default: "Bhawan Sewa (Ramsagar Builders) | Construction Company in Nepal", template: "%s | Bhawan Sewa" },
+  description: "Bhawan Sewa, also known as Ramsagar Builders, provides civil engineering consultation, house design, structural design, construction, renovation, and site inspection all over Nepal.",
+  keywords: ["construction company in Nepal", "house construction Nepal", "home renovation Nepal", "Bhawan Sewa", "Ramsagar Builders"],
+  alternates: { canonical: "/" },
+  openGraph: { title: "Bhawan Sewa (Ramsagar Builders) | Building better, together", description: "Design-led construction and renovation for homes and businesses across Nepal.", url: "https://bhawansewa.com", siteName: "Bhawan Sewa", locale: "en_NP", type: "website" },
+  robots: { index: true, follow: true },
+};
+
+export default function RootLayout({ children }: LayoutProps<"/">) {
+  return (
+    <html lang="en" className={`${dmSans.variable} ${fraunces.variable}`}>
+      <body className="min-h-full flex flex-col">{children}</body>
+    </html>
+  );
+}
