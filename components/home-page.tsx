@@ -7,7 +7,7 @@ const structuredData = {
   name: "Bhawan Sewa",
   alternateName: "Ramsagar Builders",
   url: "https://bhawansewa.com",
-  description: "A construction and renovation company serving clients across Nepal.",
+  description: "A construction and civil engineering company serving homes, businesses, roads, public places, and infrastructure projects across Nepal.",
   areaServed: "Nepal",
   telephone: "+977-9852800195",
   email: "Consult.bhawansewa@gmail.com",
@@ -24,7 +24,7 @@ function SectionLabel({ number, children, light = false }: { number: string; chi
 }
 
 function Hero() {
-  return <section className="hero" id="top"><div className="hero-image" role="img" aria-label="A sunlit contemporary home interior" /><div className="hero-overlay" /><div className="hero-content container"><p className="eyebrow light">Across Nepal · Since 2011</p><h1>Building places<br /><i>worth coming home to.</i></h1><p className="hero-copy">A construction company for thoughtful homes, useful spaces, and the life that happens inside them.</p><div className="hero-actions"><a className="button button-accent" href="#work">Explore our work <span>↓</span></a><a className="text-link light" href="#process">See how we build <span>↗</span></a></div></div><div className="hero-note"><span className="note-line" />Built with care<br />across Nepal</div></section>;
+  return <section className="hero" id="top"><div className="hero-image" role="img" aria-label="A sunlit contemporary home interior" /><div className="hero-overlay" /><div className="hero-content container"><p className="eyebrow light">Across Nepal · Since 2011</p><h1>Building places<br /><i>worth coming home to.</i></h1><p className="hero-copy">Construction and civil engineering for homes, businesses, roads, public places, and the life that happens inside them.</p><div className="hero-actions"><a className="button button-accent" href="#work">Explore our work <span>↓</span></a><a className="text-link light" href="#process">See how we build <span>↗</span></a></div></div><div className="hero-note"><span className="note-line" />Built with care<br />across Nepal</div></section>;
 }
 
 function Intro() {
